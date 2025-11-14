@@ -1,3 +1,29 @@
 :root {
-
+  --light-blue: #2998ff;
+  --dark-blue: #135cc5;
+  --light-red: #f87171;
+  --dark-red: #dc2626;
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
 }
+
+.cool {
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+}
+
+.warm {
+  --primary: var(--light-red);
+  --secondary: var(--dark-red);
+}
+
+.hero {
+  background-color: var(--primary);
+}
+
+.main {
+  background-color: var(--secondary);
+  height: 90vh;
+}
+
+
