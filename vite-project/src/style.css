@@ -19,11 +19,18 @@
 
 .hero {
   background-color: var(--primary);
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .main {
   background-color: var(--secondary);
-  height: 90vh;
+  height: 50vh;
+}
+.main2 {
+  background-color: white;
+  height: 80vh;
 }
 
 

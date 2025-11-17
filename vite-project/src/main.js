@@ -9,7 +9,3 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
-function clickButton() {
-  const button = document.getElementsByClassName(btn)
-  button.addEventListener("click" ()=> )
-}
