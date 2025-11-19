@@ -167,3 +167,5 @@ You just changed what “primary” and “secondary” mean!
 </body>-text` or `.small-text` modes.
 
 ---
+cd vite-project
+npm run dev

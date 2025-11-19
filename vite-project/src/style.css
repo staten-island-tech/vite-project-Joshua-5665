@@ -16,18 +16,30 @@
   --primary: var(--light-red);
   --secondary: var(--dark-red);
 }
-
-.hero {
-  background-color: var(--primary);
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
 .main {
   background-color: var(--secondary);
   height: 50vh;
 }
+h1 {
+  background-color: rgb(216, 216, 216);
+  font-size: 25px;
+  border-radius: 15px;
+  padding-left: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  transform: translateY(20px);
+}
+h2 {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding-top: 50px;
+  padding-left: 80px;
+  font-size: 50px;
+  color: white;
+}
+
+
 .main2 {
   background-color: white;
   height: 80vh;
