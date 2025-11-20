@@ -168,4 +168,4 @@ You just changed what “primary” and “secondary” mean!
 
 ---
 cd vite-project
-npm run dev
+npm run devcd 

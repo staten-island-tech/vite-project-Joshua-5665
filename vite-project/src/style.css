@@ -17,32 +17,44 @@
   --secondary: var(--dark-red);
 }
 .main {
-  background-color: var(--secondary);
+  background-color: rgb(145, 145, 145);
   height: 50vh;
+}
+.main2 {
+  background-color: white;
+  height: 80vh;
 }
 h1 {
   background-color: rgb(216, 216, 216);
+  height: 30px;
+  text-align: left;
   font-size: 25px;
-  border-radius: 15px;
+  border-radius: 5px;
   padding-left: 30px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
   transform: translateY(20px);
+  font-weight: 100;
+  font-style: italic
 }
 h2 {
-  margin-left: 20px;
   margin-top: 20px;
   margin-right: 20px;
   padding-top: 50px;
   padding-left: 80px;
   font-size: 50px;
-  color: white;
+  color: rgb(8, 8, 8);
 }
-
-
-.main2 {
-  background-color: white;
-  height: 80vh;
+.home {
+  background-color: rgb(129, 129, 129);
+  width: 55px;
+  height: 25px;
+  text-align: center;
+  transform: translate(130px, -23px);
+}
+.container {
+  height: 150px;
+  width: 100px;
 }
 
 

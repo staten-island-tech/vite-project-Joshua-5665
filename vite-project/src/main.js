@@ -9,3 +9,10 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
+const shelf = [
+  {name:"Book"},
+  {name:"Book"},
+  {name:"Book"},
+  {name:"Book"}
+];
+ 
