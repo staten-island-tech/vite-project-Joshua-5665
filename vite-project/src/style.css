@@ -21,7 +21,7 @@
   height: 50vh;
 }
 .main2 {
-  background-color: white;
+  background-color: blue;
   height: 80vh;
 }
 h1 {
@@ -57,4 +57,9 @@ h2 {
   width: 100px;
 }
 
-
+.main2{
+  background-color: var(--primary);
+}
+#book1 {
+  transform: translate(50px, 50px);
+}
