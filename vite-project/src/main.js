@@ -10,11 +10,21 @@ document.querySelector(".home").addEventListener("click", function () {
   }
 });
 
+const home = document.querySelector(".home")
+home.addEventListener("click", function() {
+  document.body.style.color = "blue"
+});
+
+
 
 const shelf = [
-  {name:"Book"},
+  {name:"Book",
+   img: "https://m.media-amazon.com/images/I/81xVnX8OodL._SY385_.jpg"
+  },
   {name:"Book"},
   {name:"Book"},
   {name:"Book"}
 ];
+
+
 
