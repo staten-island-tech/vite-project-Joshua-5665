@@ -1,5 +1,5 @@
 import './style.css'
-document.querySelector(".home").addEventListener("click", function () {
+document.querySelector(".toggleColor").addEventListener("click", function () {
   if(document.body.classList.contains("cool")) {
     console.log("ochen da")
     document.body.classList.add("warm");
@@ -10,10 +10,7 @@ document.querySelector(".home").addEventListener("click", function () {
   }
 });
 
-const home = document.querySelector(".home")
-home.addEventListener("click", function() {
-  document.body.style.color = "blue"
-});
+
 
 
 
