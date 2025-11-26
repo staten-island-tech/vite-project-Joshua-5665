@@ -26,6 +26,8 @@
   height: 50vh;
 }
 .main2 {
+  display: flex;
+  justify-content: space-evenly;
   background-color: var(--dark-bg);
   height: 80vh;
   background-color: var(--primary);
@@ -74,10 +76,27 @@ h2 {
    cursor: pointer;
 }
 
-
 #book1 {
-  transform: translate(50px, 50px);
+   height: 50vh;
+   transition: 0.2s ease-in-out;
+   margin-top: 50px;
 }
-#book1.hover {
-  transition:
+#book1:hover {
+  transform: scale(1.05); 
+}
+#book2 {
+  height: 50vh;
+  transition: 0.2s ease-in-out;
+  margin-top: 50px;
+}
+#book2:hover {
+   transform: scale(1.05); 
+}
+#book3 {
+   height: 50vh;
+   transition: 0.2s ease-in-out;
+   margin-top: 50px;
+}
+#book3:hover {
+  transform: scale(1.05); 
 }
