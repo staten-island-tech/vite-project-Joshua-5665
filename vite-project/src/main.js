@@ -34,7 +34,6 @@ const shelf = [
         "afterbegin",
         `<div class="main2">
             <img class="card-img" src="${shelf.img}"/>
-            
             <button class="add-to-cart-btn">ADD TO CART</button>
         </div>`
     );

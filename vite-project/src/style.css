@@ -75,45 +75,23 @@ h2 {
   background-color: rgb(129, 129, 129);
    cursor: pointer;
 }
-
-#book1 {
-   height: 50vh;
-   transition: 0.2s ease-in-out;
-   margin-top: 50px;
-}
-#book1:hover {
-  transform: scale(1.05); 
-}
-#book2 {
-  height: 50vh;
-  transition: 0.2s ease-in-out;
-  margin-top: 50px;
-}
-#book2:hover {
-   transform: scale(1.05); 
-}
-#book3 {
-   height: 50vh;
-   transition: 0.2s ease-in-out;
-   margin-top: 50px;
-}
-#book3:hover {
-  transform: scale(1.05); 
-}
-
 .card-img {
   height: 50vh;
-   transition: 0.2s ease-in-out;
-   margin-top: 50px;
+  margin-top: 80px;
+  margin-left: 5vh;
+  transition: 0.4s ease-in-out;
+}
+.card-img:hover {
+  transform: scale(1.1);
 }
 
 .add-to-cart-btn {
   height: 8vh;
   margin-top: 50px;
-  transform: translate(-105px, 478px);
+  transform: translate(-74px, 508px);
 }
 h3 {
-  font-size: 30px;
-  text-align: left;
+  transform: translate(-172vh, 0px);
   color: white;
+  font-size: 30px;
 }
