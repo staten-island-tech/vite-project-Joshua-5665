@@ -100,3 +100,20 @@ h2 {
 #book3:hover {
   transform: scale(1.05); 
 }
+
+.card-img {
+  height: 50vh;
+   transition: 0.2s ease-in-out;
+   margin-top: 50px;
+}
+
+.add-to-cart-btn {
+  height: 8vh;
+  margin-top: 50px;
+  transform: translate(-105px, 478px);
+}
+h3 {
+  font-size: 30px;
+  text-align: left;
+  color: white;
+}
