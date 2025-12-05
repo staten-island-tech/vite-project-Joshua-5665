@@ -27,11 +27,14 @@
   max-width: 98vw;
 }
 .main2 {
-  display: inline-block;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
   background-color: var(--dark-bg);
-  height: 80vh;
+  height: 80%;
   max-width: 98vw;
+  margin: 20px auto;
   background-color: var(--primary);
 }
 h1 {
@@ -87,6 +90,9 @@ h3 {
   margin-top: 50px;
   margin-left: 2vh;
   transition: 0.4s ease-in-out;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
 .card-img:hover {
   transform: scale(1.1);
