@@ -18,24 +18,48 @@
 
 .warm {
   --primary: rgb(236, 236, 236);
-  --secondary: rgb(235, 235, 235);
+  --secondary: rgb(35, 99, 247);
   --text: var(--black);
+}
+body{
+  background-color: var(--primary);
 }
 .main {
   background-color: var(--secondary);
   height: 50vh;
-  max-width: 98vw;
+  max-width: 100%;
 }
 .main2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  background-color: var(--dark-bg);
-  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
   max-width: 98vw;
-  margin: 20px auto;
   background-color: var(--primary);
+}
+.icon{
+  color: var(--text);
+  font-size: 30px;
+  font: bold;
+  transform: translate(70px, 20px);
+  cursor: pointer;
+  transition-delay: 20ms;
+}
+.icon:hover {
+  font-weight: bold;
+}
+.book{
+  color: var(--text);
+  height: 45px;
+  width: 45px;
+  transform: translate(18px, -23px);
+}
+.search {
+  height: 20px;
+  width: 20px;
+  color: black;
+  transform: translate(408px, -123px);
 }
 h1 {
   background-color: rgb(216, 216, 216);
@@ -44,9 +68,9 @@ h1 {
   font-size: 25px;
   border-radius: 5px;
   padding-left: 30px;
-  margin-left: 200px;
+  margin-left: 400px;
   margin-right: 200px;
-  transform: translateY(20px);
+  transform: translateY(-80px);
   font-weight: 100;
   font-style: italic;
   border-style: solid;
@@ -57,51 +81,106 @@ h2 {
   margin-right: 20px;
   padding-top: 50px;
   padding-left: 80px;
-  font-size: 50px;
-  color: var(--text)
-}
-h3 {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  transform: translate(2vw, -160vh);
+  font-size: 70px;
+  color: var(--text);
+  transform: translateY(-80px);
 }
 .home {
   background-color: rgb(129, 129, 129);
   width: 55px;
   height: 25px;
   text-align: center;
-  transform: translate(130px, -26px);
+  transform: translate(305px, -128px);
   cursor: pointer;
 }
-.container {
-  height: 150px;
-  width: 100px;
-}
-
 .toggleColor {
-  transform: translate(0px, -26px);
+  transform: translate(175px, -128px);
   width: 55px;
   height: 25px;
   background-color: rgb(129, 129, 129);
-   cursor: pointer;
+  cursor: pointer;
 }
 .card-img {
-  height: 50vh;
-  margin-top: 50px;
-  margin-left: 2vh;
+  height: 33vh;
+  margin-left: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  transform: translateY(-130px);
   transition: 0.4s ease-in-out;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+  transition-delay: 90ms;
 }
 .card-img:hover {
-  transform: scale(1.1);
+  transform: translateY(-130px) scale(1.1);
 }
 
 .add-to-cart-btn {
-  height: 8vh;
-  transform: translate(-109px, 45px);
-
-
+  display: flex;
+  height: 5vh;
+  width: 4vw;
+  font-size: 10px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  transform: translate(-60px, -15px);
+  
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: rgb(255, 187, 0);
+}
+.rec{
+  color: var(--text);
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 25px; 
+}
+.read{
+  color: var(--text);
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 25px; 
+  transform: translateY(-250px);
+}
+.main3{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  max-width: 98vw;
+  background-color: var(--primary);
+}
+.card-img2 {
+  height: 33vh;
+  margin-left: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  transform: translateY(-170px);
+  transition: 0.4s ease-in-out;
+  transition-delay: 90ms;
+}
+.card-img2:hover {
+  transform: translateY(-170px) scale(1.1);
+}
+.add-to-cart-btn2 {
+  display: flex;
+  height: 5vh;
+  width: 4vw;
+  font-size: 10px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  transform: translate(-60px, -55px);
+  
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: rgb(255, 187, 0);
+}
+.filter-btn{
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  font-size: 25px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transform: translate(10px, -10px);
 }
 
