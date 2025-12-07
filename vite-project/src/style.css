@@ -129,8 +129,7 @@ h2 {
   justify-content: space-evenly;
   justify-items: center;
   align-items: center;
-  transform: translate(-60px, -15px);
-  
+  transform: translate(-65px, -15px);
   cursor: pointer;
   border-radius: 15px;
   background-color: rgb(255, 187, 0);
@@ -159,7 +158,7 @@ h2 {
 }
 .card-img2 {
   height: 33vh;
-  margin-left: 2px;
+  margin-left: 3px;
   border-radius: 6px;
   cursor: pointer;
   transform: translateY(-170px);
@@ -177,7 +176,7 @@ h2 {
   justify-content: space-evenly;
   justify-items: center;
   align-items: center;
-  transform: translate(-60px, -55px);
+  transform: translate(-65px, -55px);
   
   cursor: pointer;
   border-radius: 15px;
@@ -189,7 +188,7 @@ h2 {
   text-align: center;
   font-size: 25px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  transform: translate(10px, -90px);
+  transform: translate(10px, -120px);
   cursor: pointer;
 }
 .filter-btn2{
@@ -198,8 +197,9 @@ h2 {
   text-align: center;
   font-size: 25px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  transform: translate(10px, -90px);
+  transform: translate(10px, -120px);
   cursor: pointer;
+  margin-left: 20px;
 }
 @media (max-width: 98vw) {
     .killzone {
@@ -214,7 +214,7 @@ h2 {
   background-color: var(--primary);
   height: 60vh;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 .word {
   color: var(--text);
@@ -222,4 +222,12 @@ h2 {
   margin-top: 20px;
   margin-left: 25px; 
   transform: translateY(-620px);
+}
+.remove {
+  transform: translate(250px, 444px);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart-btns {
+  display: flex;
 }

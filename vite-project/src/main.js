@@ -118,10 +118,7 @@ home.addEventListener("click", () => {
   window.location.href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbcrj53mGyk-u4JwrIb6z1RBAeCpxR78gfQ&s";
 });
 
-let library = [];
 
-const myElement = document.querySelector('.main2');
-const originalContent = myElement.innerHTML;
 
 const please = document.querySelector('.read');
 const iNeedThis = please.innerHTML;
@@ -129,28 +126,57 @@ const iNeedThis = please.innerHTML;
 const speed = document.querySelector('.rec');
 const myMom = speed.innerHTML;
 
+const s = document.querySelector('.word');
+const t = s.innerHTML;
+
+const main2 = document.querySelector('.main2');
+const main3 = document.querySelector('.main3');
+
+const library = document.querySelector('.library');
+library.style.display = 'none';
+
+const word = document.querySelector('.word')
+word.style.display = 'none';
+
+const bye = document.querySelector('.remove');
+bye.style.display = 'none';
+
+const sike = document.querySelector('.filter-btn2');
+sike.style.display = 'none';
+
+const remove = document.querySelector('.remove');
+remove.addEventListener('click', () => {
+  window.alert('Library Cleared!');
+  document.querySelector('.library').innerHTML = '';
+})
 
 const shelf = document.querySelector('.filter-btn');
 shelf.addEventListener('click', () => {
-  document.querySelector('.main2').innerHTML = '';
+  main2.style.display = 'none';
   document.querySelector('.rec').innerHTML = 'Library - To Read';
+  document.querySelector('.word').innerHTML = '';
+  library.style.display = 'flex';
+  bye.style.display = 'flex';
+  sike.style.display = 'flex';
 })
 const back = document.querySelector('.filter-btn2');
 back.addEventListener('click', () => {
-  document.querySelector('.main2').innerHTML = originalContent;
+  main2.style.display = 'flex';
   document.querySelector('.rec').innerHTML = myMom;
+  document.querySelector('.word').innerHTML = t;
+  library.style.display = 'none';
+  bye.style.display = 'none';
+  sike.style.display = 'none';
 })
-const myElement2 = document.querySelector('.main3');
-const originalContent2 = myElement2.innerHTML;
 
 const shelf2 = document.querySelector('.filter-btn');
 shelf2.addEventListener('click', () => {
-  document.querySelector('.main3').innerHTML = '';
+  main3.style.display = 'none';
   document.querySelector('.read').innerHTML = '';
 })
 const back2 = document.querySelector('.filter-btn2');
   back2.addEventListener('click', ()=> {
-    document.querySelector('.main3').innerHTML = originalContent2;
+    main3.style.display = 'flex';
     document.querySelector('.read').innerHTML = iNeedThis;
 })
 
@@ -174,6 +200,8 @@ collection2.forEach((jit) => {
     destination2.appendChild(clone2);
   })
 })
+
+
 
 
 
