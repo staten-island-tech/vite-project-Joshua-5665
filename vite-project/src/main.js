@@ -9,11 +9,6 @@ document.querySelector(".toggleColor").addEventListener("click", function () {
     document.body.classList.remove("warm");
   }
 });
-
-
-
-
-
 const recommended = [
   {
    img: "https://m.media-amazon.com/images/I/81xVnX8OodL._SY385_.jpg"
@@ -120,8 +115,71 @@ const search = document.querySelector("h1")
 
 const home = document.querySelector(".home");
 home.addEventListener("click", () => {
-  window.location.href = "http://127.0.0.1:5500/index.html";
+  window.location.href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbcrj53mGyk-u4JwrIb6z1RBAeCpxR78gfQ&s";
 });
+
+let library = [];
+
+const myElement = document.querySelector('.main2');
+const originalContent = myElement.innerHTML;
+
+const please = document.querySelector('.read');
+const iNeedThis = please.innerHTML;
+
+const speed = document.querySelector('.rec');
+const myMom = speed.innerHTML;
+
+
+const shelf = document.querySelector('.filter-btn');
+shelf.addEventListener('click', () => {
+  document.querySelector('.main2').innerHTML = '';
+  document.querySelector('.rec').innerHTML = 'Library - To Read';
+})
+const back = document.querySelector('.filter-btn2');
+back.addEventListener('click', () => {
+  document.querySelector('.main2').innerHTML = originalContent;
+  document.querySelector('.rec').innerHTML = myMom;
+})
+const myElement2 = document.querySelector('.main3');
+const originalContent2 = myElement2.innerHTML;
+
+const shelf2 = document.querySelector('.filter-btn');
+shelf2.addEventListener('click', () => {
+  document.querySelector('.main3').innerHTML = '';
+  document.querySelector('.read').innerHTML = '';
+})
+const back2 = document.querySelector('.filter-btn2');
+  back2.addEventListener('click', ()=> {
+    document.querySelector('.main3').innerHTML = originalContent2;
+    document.querySelector('.read').innerHTML = iNeedThis;
+})
+
+const collection = document.querySelectorAll('.add-to-cart-btn');
+collection.forEach((jit) => {
+  jit.addEventListener('click', () => {
+    const place = document.querySelector('.card-img');
+    const destination = document.querySelector('.library');
+    
+    const clone = place.cloneNode(true);
+    destination.appendChild(clone);
+  })
+})
+const collection2 = document.querySelectorAll('.add-to-cart-btn2');
+collection2.forEach((jit) => {
+  jit.addEventListener('click', () => {
+    const place2 = document.querySelector('.card-img2');
+    const destination2 = document.querySelector('.library');
+    
+    const clone2 = place2.cloneNode(true);
+    destination2.appendChild(clone2);
+  })
+})
+
+
+
+
+
+
 
 
 
