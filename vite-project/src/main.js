@@ -28,9 +28,6 @@ const shelf = [
    img: "https://m.media-amazon.com/images/I/51shYHwY06L._SY445_SX342_FMwebp_.jpg"
   },
   {
-   img: "https://m.media-amazon.com/images/I/51SJCNqJ4jL._SX342_SY445_FMwebp_.jpg"
-  },
-  {
    img: "https://www.beacon.org/Assets/ProductImages/978-080706010-0.jpg" 
   },
   {
@@ -59,7 +56,17 @@ const shelf = [
     filterByType.forEach(inject);
   }
 shelf.forEach(inject);
-  
+
+const buttons = document.querySelectorAll(".add-to-cart-btn");
+buttons.forEach(btn => {
+  btn.addEventListener("mouseover", () => {
+    btn.style.backgroundColor = "orange";
+    
+  });
+});
+  buttons.forEach(btn => {
+    btn.removeEventListener()
+  })
 
 
 
