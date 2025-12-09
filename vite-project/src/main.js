@@ -252,7 +252,11 @@ what.addEventListener('mouseout', () => {
   what.style.color = '';
 })
 
-
+const last = document.querySelector('.icon');
+last.addEventListener('click', ()=> {
+  window.prompt('What is sechs sieben in German?');
+});
+const user = window.prompt('What is sechs sieben in German?', '');
 
 
 
