@@ -253,10 +253,16 @@ what.addEventListener('mouseout', () => {
 })
 
 const last = document.querySelector('.icon');
-last.addEventListener('click', ()=> {
-  window.prompt('What is sechs sieben in German?');
+last.addEventListener('click', () => {
+  let p = window.prompt('What is "sechs sieben" in German?');
+  if (p === "67","six seven","Six Seven","Six seven","67!") {
+    window.alert('Correct!');
+  } else if (p === '') {
+    window.alert('Did Not Answer!');
+  } else {
+    window.alert('Wrong!')
+  }
 });
-const user = window.prompt('What is sechs sieben in German?', '');
 
 
 
