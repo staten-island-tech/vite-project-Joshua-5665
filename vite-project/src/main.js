@@ -255,10 +255,12 @@ what.addEventListener('mouseout', () => {
 const last = document.querySelector('.icon');
 last.addEventListener('click', () => {
   let p = window.prompt('What is "sechs sieben" in German?');
-  if (p === "67","six seven","Six Seven","Six seven","67!") {
+  if (p === "67" || p === "Six Seven" || p === "67!" || p ==="six seven") {
     window.alert('Correct!');
   } else if (p === '') {
-    window.alert('Did Not Answer!');
+    window.alert('you did not answer...');
+  } else if (p.toLowerCase() ==='sixseven' ) {
+    window.alert('Does your brain know how to add spaces?')
   } else {
     window.alert('Wrong!')
   }
